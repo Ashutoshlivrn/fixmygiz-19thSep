@@ -1,9 +1,4 @@
-import 'package:fixmygiz/OnBoardingScreen/onboarding_screen1.dart';
-import 'package:fixmygiz/auth/views/auth_screen.dart';
-import 'package:fixmygiz/auth/views/otp_screen.dart';
-import 'package:fixmygiz/bottom_navigation_bar.dart';
-import 'package:fixmygiz/home_screen/home_screen2.dart';
-import 'package:fixmygiz/rough.dart';
+
 import 'package:fixmygiz/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -23,10 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:
-           MyBottomNavigationBar()
+          // MyBottomNavigationBar()
 
-
-      //SplashScreen(),
+      SplashScreen(),
     );
   }
 }
