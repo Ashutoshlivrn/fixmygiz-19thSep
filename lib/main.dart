@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
       ),
       home:
       // Rough()
-      MyBottomNavigationBar()
+      //MyBottomNavigationBar()
 
 
-     // SplashScreen(),
+     SplashScreen(),
     );
   }
 }
