@@ -2,7 +2,9 @@ import 'package:fixmygiz/profilescreen/Gift_Cards/Gift_Cards.dart';
 import 'package:fixmygiz/profilescreen/Help_Center/Help_Center.dart';
 import 'package:fixmygiz/profilescreen/My_Bookings/My_Bookings.dart';
 import 'package:fixmygiz/profilescreen/My_Wallet/my_wallet.dart';
+import 'package:fixmygiz/profilescreen/Payment_Options/Payment_Options.dart';
 import 'package:fixmygiz/profilescreen/Scheduled_Bookings/scheduled_bookings.dart';
+import 'package:fixmygiz/profilescreen/Settings/settings.dart';
 import 'package:fixmygiz/widgets/subtilte.dart';
 import 'package:fixmygiz/widgets/text_widgets.dart';
 import 'package:flutter/material.dart';
@@ -156,17 +158,27 @@ class ProfileScreen extends StatelessWidget {
           Gap(2),
           Container(
             color: Colors.white,
-            child: ListTile(
-              leading: Icon(Icons.payment),
-              title: Text('Payment Options'),
+            child: InkWell(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => PaymentOptions()  ,));
+              },
+              child: ListTile(
+                leading: Icon(Icons.payment),
+                title: Text('Payment Options'),
+              ),
             ),
           ),
           Gap(2),
           Container(
             color: Colors.white,
-            child: ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Settings '),
+            child: InkWell(
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => Settings() ,));
+              },
+              child: ListTile(
+                leading: Icon(Icons.settings),
+                title: Text('Settings '),
+              ),
             ),
           ),
           TextButton(onPressed: (){}, child: Text('Logout',style: TextStyle(color: Colors.red),))
