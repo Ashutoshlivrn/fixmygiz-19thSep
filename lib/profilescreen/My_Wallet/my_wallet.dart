@@ -39,13 +39,11 @@ class _My_WalletState extends State<My_Wallet> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-              SizedBox(
-                height: size10*11,
-                child: InkWell(
-                  onTap: (){},
-                  child: const Center(child: Text('refer and earn image'),),
+              Container(
+                height: size10*10.7,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(image: AssetImage('images/icons/refer_and_earn.png'),fit: BoxFit.fill)),
                 ) ,
-              ),
               const Separator(),
               const Separator(),
               Container(
@@ -88,7 +86,7 @@ class _My_WalletState extends State<My_Wallet> {
             padding: EdgeInsets.all(12.0),
             child: Row(
               children: [
-                Text(' Leading Text'),
+                Text(' Have a question?'),
                 Spacer(),
                 Icon(
                   isExpanded ? Icons.keyboard_arrow_down_rounded: Icons.keyboard_arrow_right_rounded ,

@@ -11,6 +11,7 @@ class TabOne extends StatefulWidget {
 class _TabOneState extends State<TabOne> {
   @override
   Widget build(BuildContext context) {
+    var size10 = MediaQuery.of(context).size.height / 55;
     return Scaffold(
       body: Center(
         child: Column(
@@ -29,10 +30,10 @@ class _TabOneState extends State<TabOne> {
                 )
               ],
             ),
-            const SizedBox(height: 20,),
+             SizedBox(height: size10 * 2,),
             Container(
-              height: 40,
-              width: 160,
+              height: size10 * 3.6,
+              width: size10 * 13,
               decoration: BoxDecoration(color: black,borderRadius: BorderRadius.all(Radius.circular(4))),
               child: Center(child: Text('Add a card',style: TextStyle(color: white,fontSize: 15,fontWeight: FontWeight.w500),),),
             )

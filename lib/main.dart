@@ -1,6 +1,8 @@
 
 import 'package:fixmygiz/profilescreen/Payment_Options/Payment_Options.dart';
 import 'package:fixmygiz/profilescreen/Payment_Options/Card_Number_Form.dart';
+import 'package:fixmygiz/profilescreen/profile_screen.dart';
+
 import 'package:fixmygiz/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -24,11 +26,21 @@ class MyApp extends StatelessWidget {
       home:
       // Rough()
      //rough1()
-     //  MyBottomNavigationBar()
+       //MyBottomNavigationBar()
       //PaymentOptions()
+      ProfileScreen()
 
 
-     SplashScreen(),
+     //SplashScreen(),
     );
   }
 }
+
+
+//gift card ke tab one me image
+//rate urban company
+
+
+
+
+

@@ -71,11 +71,15 @@ class _My_RatingState extends State<My_Rating> {
 
 
 
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 14.0),
-                child:  Icon(Icons.handshake,size: 30,),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 0.0),
+                child: Container(
+                    height: size10 * 9,
+                    width:  size10 * 9,
+                    decoration: BoxDecoration(image: DecorationImage(image: AssetImage('images/icons/fist_bump.png'))),
+                ),
               ),
-              SizedBox(height: size10/1.4,),   //size 10
+              //SizedBox(height: size10* 1.3,),   //size 10
                const Padding(
                    padding:  EdgeInsets.symmetric(horizontal: 14.0),
                  child: Text('Empathise', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 19),  ),
@@ -88,9 +92,13 @@ class _My_RatingState extends State<My_Rating> {
               SizedBox(height: size10*1.4,),   //size 15
 
 
-               const Padding(
-                 padding:  EdgeInsets.symmetric(horizontal: 14.0),
-                 child: Icon(Icons.heart_broken,size: 30,),
+                Padding(
+                 padding:  EdgeInsets.symmetric(horizontal: 0.0),
+                 child:   Container(
+                   height: size10 * 9,
+                   width:  size10 * 9,
+                   decoration: BoxDecoration(image: DecorationImage(image: AssetImage('images/icons/support_image.jpg'))),
+                 ) ,
                ),
                const Padding(
                    padding:  EdgeInsets.symmetric(horizontal: 14.0),
@@ -104,9 +112,13 @@ class _My_RatingState extends State<My_Rating> {
 
 
               SizedBox(height: size10*1.4,),   //size 15
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 14.0),
-                child: Icon(Icons.message,size: 30,),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                child: Container(
+                  height: size10 * 8,
+                  width:  size10 * 8,
+                  decoration: BoxDecoration(image: DecorationImage(image: AssetImage('images/icons/respect_icon.jpg'))),
+                ),
               ),
                const Padding(
                  padding: EdgeInsets.symmetric(horizontal: 14.0),

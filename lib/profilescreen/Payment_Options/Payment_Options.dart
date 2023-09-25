@@ -54,7 +54,6 @@ class _PaymentOptionsState extends State<PaymentOptions> {
 
 
 
-
                  InkWell(
                    onTap: () {
                      showModalBottomSheet(
@@ -107,12 +106,20 @@ class _PaymentOptionsState extends State<PaymentOptions> {
                        } );
                    },
                    child: ListTile(
-                     leading: Icon(Icons.payment_rounded,size: 26,color: Colors.purple.shade400,),
+                     leading: Container(
+                       height: size10 * 3.9,
+                       width: size10 * 3.6,
+                       decoration: BoxDecoration(image: DecorationImage(image: AssetImage('images/icons/add_a_card.png'))),
+                     ) ,
+                     //Image.asset('images/icons/add_a_card.png'),
+                     //Icon(Icons.payment_rounded,size: 26,color: Colors.purple.shade400,),
 
                      title: const Text('Add a card'),
                      trailing: Icon(Icons.arrow_forward_ios_rounded,size: 16,),
                    ),
                  ),
+
+
 
               ],
             )

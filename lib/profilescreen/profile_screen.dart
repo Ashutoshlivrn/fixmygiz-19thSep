@@ -34,8 +34,8 @@ class ProfileScreen extends StatelessWidget {
           Container(
             color: Colors.white,
             child: ListTile(
-              title: const TitleTextWidget2(title: 'Verified Customer'),
-              subtitle: const Text('+91 123456789'),
+              title:  Text( 'Verified Customer',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700),),
+              subtitle:  Text('+91 123456789'),
               trailing: IconButton(onPressed: (){}, icon: Icon(Icons.edit)),
             ),
           ),
@@ -143,7 +143,7 @@ class ProfileScreen extends StatelessWidget {
               },
               child: ListTile(
                 leading: Icon(Icons.access_time_rounded),
-                title: Text('Sheduled Bookings'),
+                title: Text('Scheduled Bookings'),
               ),
             ),
           ),

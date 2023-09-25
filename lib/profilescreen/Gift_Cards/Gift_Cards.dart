@@ -28,6 +28,7 @@ class _Gift_CardsState extends State<Gift_Cards> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
+    var size10 = MediaQuery.of(context).size.height / 55;
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
@@ -41,7 +42,7 @@ class _Gift_CardsState extends State<Gift_Cards> with SingleTickerProviderStateM
             snap: true,
             floating: true,
             pinned: true,
-            expandedHeight: 160.0,
+            expandedHeight: size10 * 14,
             // **Is it intended ?** flexibleSpace.title overlaps with tabs title.
             flexibleSpace: FlexibleSpaceBar(
               centerTitle: true,
